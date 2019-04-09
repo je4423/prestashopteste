@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-17 22:55:26
+/* Smarty version 3.1.33, created on 2019-04-09 01:11:22
   from 'C:\wamp64\www\prestashop\admin202nfwfmw\themes\default\template\controllers\dashboard\helpers\view\view.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4123fe916a08_16591985',
+  'unifunc' => 'content_5cac0d5a311373_26145426',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aa38fbb0d6f3e65a62b7398ab7090da13dc3e30d' => 
     array (
       0 => 'C:\\wamp64\\www\\prestashop\\admin202nfwfmw\\themes\\default\\template\\controllers\\dashboard\\helpers\\view\\view.tpl',
-      1 => 1547768032,
+      1 => 1554777381,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c4123fe916a08_16591985 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cac0d5a311373_26145426 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
 	var dashboard_ajax_url = '<?php echo $_smarty_tpl->tpl_vars['link']->value->getAdminLink('AdminDashboard');?>

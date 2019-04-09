@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-17 22:55:14
+/* Smarty version 3.1.33, created on 2019-04-09 00:47:54
   from 'C:\wamp64\www\prestashop\modules\welcome\views\contents\end.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4123f2c77097_11670189',
+  'unifunc' => 'content_5cac07da73b9c2_41670208',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7350fcf7a25362cb0f1df6ba390b340b8c70fb68' => 
     array (
       0 => 'C:\\wamp64\\www\\prestashop\\modules\\welcome\\views\\contents\\end.tpl',
-      1 => 1547768053,
+      1 => 1554778024,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c4123f2c77097_11670189 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cac07da73b9c2_41670208 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="onboarding-welcome" class="modal-body">
     <div class="col-12">

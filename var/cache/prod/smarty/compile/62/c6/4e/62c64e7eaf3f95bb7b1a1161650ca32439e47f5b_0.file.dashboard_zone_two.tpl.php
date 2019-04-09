@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-17 22:55:24
+/* Smarty version 3.1.33, created on 2019-04-09 01:11:20
   from 'C:\wamp64\www\prestashop\modules\dashgoals\views\templates\hook\dashboard_zone_two.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4123fc7d79a2_63808397',
+  'unifunc' => 'content_5cac0d5856f415_87953600',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '62c64e7eaf3f95bb7b1a1161650ca32439e47f5b' => 
     array (
       0 => 'C:\\wamp64\\www\\prestashop\\modules\\dashgoals\\views\\templates\\hook\\dashboard_zone_two.tpl',
-      1 => 1547768055,
+      1 => 1554778216,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./config.tpl' => 1,
   ),
 ),false)) {
-function content_5c4123fc7d79a2_63808397 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cac0d5856f415_87953600 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="clearfix"></div>
 <?php echo '<script'; ?>
 >
