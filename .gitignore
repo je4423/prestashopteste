@@ -63,7 +63,7 @@ npm-debug.log.*
 !/img/t/index.php
 !/img/tmp/index.php
 
-# Upload
+# Upload teste
 /upload/*
 !/upload/.htaccess
 
