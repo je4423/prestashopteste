@@ -155,6 +155,7 @@ themes/default-bootstrap/modules/*/mails/*
 /var/*
 !/var/cache
 /var/cache/*
+!/var/cache/prod
 !var/cache/.gitkeep
 !/var/logs
 /var/logs/*

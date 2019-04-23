@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-09 01:11:01
+/* Smarty version 3.1.33, created on 2019-04-23 09:58:55
   from 'C:\wamp64\www\prestashop\admin202nfwfmw\themes\default\template\controllers\login\layout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cac0d450add94_26803442',
+  'unifunc' => 'content_5cbefdff864cd5_93647955',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cac0d450add94_26803442 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cbefdff864cd5_93647955 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['header']->value;?>
 
 <?php echo $_smarty_tpl->tpl_vars['page']->value;?>
