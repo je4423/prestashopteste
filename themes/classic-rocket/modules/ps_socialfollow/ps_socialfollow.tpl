@@ -24,9 +24,18 @@
  *}
 
 {block name='block_social'}
-  <div class="social-sharing col-lg-4 col-sm-12">
-      {foreach from=$social_links item='social_link'}
-       <a class="text-hide mb-2 social-share-btn social-share-btn--footer {$social_link.class}" href="{$social_link.url}" target="_blank" rel="nofollow noopener">{$social_link.label}</a>
-      {/foreach}
-  </div>
+<div class="col-md-3">
+	<p class="footer__title footer__title--desktop">{l s='Share' d='Shop.Theme.Actions'}</p>
+	<a href="#info_social_sharing" class="footer__title--mobile footer__title" data-toggle="collapse">{l s='Share' d='Shop.Theme.Actions'}</a>
+	<div id="info_social_sharing" class="social-sharing collapse show" data-collapse-hide-mobile>
+		<div class="curtir-face">
+			<div id="fb-root"></div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3&appId=203110339842410&autoLogAppEvents=1"></script>
+		</div>
+		{foreach from=$social_links item='social_link'}
+			<a class="text-hide social-share-btn social-share-btn--footer {$social_link.class}" href="{$social_link.url}" target="_blank" rel="nofollow noopener">{$social_link.label}</a>
+			{if $social_link.label == "Facebook"}<div class="fb-like" data-href="https://facebook.com/feiradamadrugadasp" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>{/if}
+		{/foreach}
+	</div>
+</div>
 {/block}

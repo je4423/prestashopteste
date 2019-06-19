@@ -49,9 +49,27 @@
         title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
       >
-        <i class="material-icons">&#xE7FF;</i>
+        <!--<i class="material-icons">&#xE7FF;</i>-->
         <span class="d-none d-md-inline">{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>
+
+      <a
+        href="{$urls.pages.order}"
+        class="text-body"
+        title="Compras"
+        rel="nofollow"
+      >        
+        <span class="d-none d-md-inline">Compras</span>
+      </a>
+      <a
+        href="{$urls.pages.order}"
+        class="text-body"
+        title="Crie sua conta"
+        rel="nofollow"
+      >        
+        <span class="d-none d-md-inline">Crie sua conta</span>
+      </a>
+
     {/if}
   </div>
 </div>
