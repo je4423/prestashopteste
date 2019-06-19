@@ -43,7 +43,7 @@
       </trans-unit>
       <trans-unit id="8cfdac16c15c9b130f26ca1d275035a0" approved="yes">
         <source>Selected product(s)</source>
-        <target state="translated">Produto (s) selecionado (s)</target>
+        <target state="translated">Produto(s) selecionado(s)</target>
         <note>Line: 125</note>
       </trans-unit>
       <trans-unit id="3b3924db361bf202158d5a23ec10ea80" approved="yes">
@@ -147,12 +147,12 @@
       </trans-unit>
       <trans-unit id="c3f6634f087fc43dd62b3154e12d050d" approved="yes">
         <source>Customer group selection</source>
-        <target state="translated">Grupo de clientes selecionados</target>
+        <target state="translated">Seleção de grupo de clientes</target>
         <note>Line: 217</note>
       </trans-unit>
       <trans-unit id="9463ae08271e82176b391f6cedb6e82b" approved="yes">
         <source>Unselected groups</source>
-        <target state="translated">Grupo de clientes deselecionados</target>
+        <target state="translated">Grupos não selecionados</target>
         <note>Line: 225</note>
       </trans-unit>
       <trans-unit id="1fc6ed753100636e79df3831a3034531" approved="yes">
@@ -362,7 +362,7 @@
       </trans-unit>
       <trans-unit id="6982640121765cb57f29e6fe170caadc" approved="yes">
         <source>Add a new condition group</source>
-        <target state="translated">Adicionar um grupo de nova condição</target>
+        <target state="translated">Adicionar um novo grupo de condições</target>
         <note>Line: 33</note>
       </trans-unit>
       <trans-unit id="643202d7ee8cb01d888e058b5341455a" approved="yes">
@@ -973,7 +973,7 @@
     <body>
       <trans-unit id="fc7b398d4af2074cfe73febdb5971153" approved="yes">
         <source>From quantity</source>
-        <target state="translated">desde quantidade</target>
+        <target state="translated">De (quantidade)</target>
         <note>Line: 229</note>
       </trans-unit>
       <trans-unit id="0558dcc45dad1cfe3d4e55ca16bfbb12" approved="yes">
@@ -1266,7 +1266,7 @@
       </trans-unit>
       <trans-unit id="4c32794a96aec43624f14839274174bf" approved="yes">
         <source>Pre-tax retail price</source>
-        <target state="translated">Preço de varejo antes do imposto </target>
+        <target state="translated">Preço de varejo antes dos impostos</target>
         <note>Line: 235</note>
       </trans-unit>
       <trans-unit id="ce0ec0f2b759fa68416e3bc96ee59276" approved="yes">
@@ -1315,17 +1315,17 @@
       </trans-unit>
       <trans-unit id="96c7d7f87187cc14ead1f887407d0edc" approved="yes">
         <source>Catalog only</source>
-        <target state="translated">Somente catalogo</target>
+        <target state="translated">Somente catálogo</target>
         <note>Line: 104</note>
       </trans-unit>
       <trans-unit id="2ba18b8df558ceaabcc89f3a16772a9b" approved="yes">
         <source>Search only</source>
-        <target state="translated">Somente Localizar</target>
+        <target state="translated">Somente Busca</target>
         <note>Line: 105</note>
       </trans-unit>
       <trans-unit id="e56fc964976b3770a35b2d6fb4b78224" approved="yes">
         <source>Nowhere</source>
-        <target state="translated">Em nenhum país</target>
+        <target state="translated">Em lugar nenhum</target>
         <note>Line: 106</note>
       </trans-unit>
       <trans-unit id="d1109f3240d262e842e8f6ff5ea755d9" approved="yes">
@@ -1335,7 +1335,7 @@
       </trans-unit>
       <trans-unit id="f2149c422ab7577f063b69a2884d17f0" approved="yes">
         <source>Available for order</source>
-        <target state="translated">disponível para pedidos</target>
+        <target state="translated">Disponível para pedidos</target>
         <note>Line: 138</note>
       </trans-unit>
       <trans-unit id="e1a5e653bc356ed6745d6814d50213eb" approved="yes">
@@ -1581,7 +1581,7 @@
       </trans-unit>
       <trans-unit id="6fa573b52d8f35231304916ea67f94a8" approved="yes">
         <source>Shipping fees</source>
-        <target state="translated">Preço de frete</target>
+        <target state="translated">Custos de Envio</target>
         <note>Line: 135</note>
       </trans-unit>
       <trans-unit id="582d519b697f8d1a558e91220beea671" approved="yes">
@@ -1625,12 +1625,12 @@
     <body>
       <trans-unit id="7b28d39c479ba659159b3356616b0a04" approved="yes">
         <source>Reduction type</source>
-        <target state="translated">tipo de redução</target>
+        <target state="translated">Tipo de desconto</target>
         <note>Line: 253</note>
       </trans-unit>
       <trans-unit id="9e834f13e35e4edf64863ab414a6217a" approved="yes">
         <source>Reduction</source>
-        <target state="translated">Redução</target>
+        <target state="translated">Desconto</target>
         <note>Line: 244</note>
       </trans-unit>
       <trans-unit id="8766423201bb422154bcad9d1d590207" approved="yes">
@@ -1665,7 +1665,7 @@
       </trans-unit>
       <trans-unit id="9bccc98ae31786b6062c540931d1467e" approved="yes">
         <source>Reduction tax</source>
-        <target state="translated">Percentual de redução</target>
+        <target state="translated">Percentual de desconto</target>
         <note>Line: 265</note>
       </trans-unit>
     </body>
@@ -1854,7 +1854,7 @@
       </trans-unit>
       <trans-unit id="d448559c3ac8f5b7e49b7162e5fbc7f1" approved="yes">
         <source>Final retail price (tax excl.) will be</source>
-        <target state="translated">Preço de varejo final (sem imposto) será</target>
+        <target state="translated">O preço final de varejo (sem impostos) será</target>
         <note>Line: 164</note>
       </trans-unit>
       <trans-unit id="2477a8ca4d9fe0ce57184d2ae0c59647" approved="yes">
@@ -1988,12 +1988,12 @@
       </trans-unit>
       <trans-unit id="e1be175ec06a5890119e29ffdb34631e" approved="yes">
         <source>Reset URL</source>
-        <target state="translated">Reiniciar o URL</target>
+        <target state="translated">Redefinir URL</target>
         <note>Line: 67</note>
       </trans-unit>
       <trans-unit id="e642dbf4ded4c06ae9feae332a0a83c4" approved="yes">
         <source>Redirection page</source>
-        <target state="translated">Pagina redirecionada</target>
+        <target state="translated">Página de redirecionamento</target>
         <note>Line: 96</note>
       </trans-unit>
       <trans-unit id="c6b3d0f163e32b16cbdde201859d33e3" approved="yes">
@@ -2064,7 +2064,7 @@
     <body>
       <trans-unit id="e192956d901dff59c35fd2c477ed28d6" approved="yes">
         <source>Price (tax excl.)</source>
-        <target state="translated">Preço (tax exc)</target>
+        <target state="translated">Preço (sem impostos)</target>
         <note>Line: 50</note>
       </trans-unit>
       <trans-unit id="e84e4bed9536affd3b2db4c43cb39f29" approved="yes">

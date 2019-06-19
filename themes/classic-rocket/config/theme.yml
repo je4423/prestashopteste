@@ -1,10 +1,10 @@
 name: classic-rocket
-display_name: Theme Feira da Madrugada SP
-version: 2.1.2
+display_name: Classic Rocket
+version: 1.0.0
 author:
-  name: "JefersonIvo"
-  email: "jeferson.ivo@gmail.com"
-  url: "jeferson.ivo@gmail.com"
+  name: "Prestarocket"
+  email: "contact@prestarocket.com"
+  url: "http://www.prestarocket.com"
 
 meta:
   compatibility:
