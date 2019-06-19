@@ -172,26 +172,23 @@
 //product prices
 .current-price-display{
   font-size: $product-regular-price-font-size;
-  font-weight: $regular-price-font-weight;
-}
-.current-price-discount{
-  color:$product-price-discount-color;
+  font-weight: $product-regular-price-font-weight;
 }
 .discount{
   text-transform: uppercase;
-  color: #FFF;
-  background-color: $product-price-discount-color;
-  font-weight: 600;
+  color: $green-100;
   display: inline-block;
   padding: .25*$spacer;
+  vertical-align: text-bottom;
 }
 
 //product add to cart
 .btn-add-to-cart{
   //@extend .d-flex;
-  text-transform: uppercase;
-  font-weight: 600;
   white-space: nowrap;
+}
+.add i {
+      color: $white!important;
 }
 
 //product tabs

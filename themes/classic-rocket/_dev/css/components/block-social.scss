@@ -53,40 +53,46 @@
   transition: box-shadow 0.3s ease-in-out;
   &:hover{
     @extend .shadow;
-
+    background-color: $gray-200;
   }
 
   &.facebook {
     background-image: url(../img/facebook-gray.svg);
-    &:hover{
+    /*&:hover{
     background-image: url(../img/facebook-blue.svg);
-    }
+    }*/
   }
   &.twitter {
     background-image: url(../img/twitter-gray.svg);
-    &:hover{
+    /*&:hover{
       background-image: url(../img/twitter-blue.svg);
-    }
+    }*/
   }
   &.googleplus {
     background-image: url(../img/gplus-gray.svg);
-    &:hover{
+    /*&:hover{
       background-image: url(../img/gplus-blue.svg);
-    }
+    }*/
   }
   &.pinterest {
     background-image: url(../img/pinterest-gray.svg);
-    &:hover{
+    /*&:hover{
       background-image: url(../img/pinterest-blue.svg);
-    }
+    }*/
   }
 
 }
 .social-share-btn--footer {
-  transition: background-color 0.3s ease-in-out;
+  background-size:80%;
+  background-color: $primary;
+  @extend .shadow-sm;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease-in-out;
   &:hover{
-    background-color: theme-color('primary');
+    @extend .shadow;
+    background-color: $gray-200;
   }
+
 }
 //
 //.facebook {

@@ -19,6 +19,8 @@
 .custom-color{
   &.custom-control{
     padding-left: 0;
+    display: inline-flex;
+    width: 25px!important;
   }
   .custom-control-label:before,
   .custom-control-label:after

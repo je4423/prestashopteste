@@ -48,6 +48,12 @@ sup{
   margin-bottom: $spacer;
 }
 /* HEADER */
+.right-nav a {
+  border: none;
+  left: 12px;
+  padding: 0 11px;
+  font-size: 14px;
+}
 .l-header{
   background-color: $header-bg;
   margin-bottom: $spacer;
@@ -76,7 +82,7 @@ ul {
   padding-left: 0;
 }
 h1,.h1{
-  text-transform: $h1-text-transform;
+  /*text-transform: $h1-text-transform;*/
 
 }
 .quick-view{
@@ -91,7 +97,7 @@ h1,.h1{
 
 .bootstrap-touchspin
 {
-  box-shadow: $bs-touchspin-boxshadow;
+  /*box-shadow: $bs-touchspin-boxshadow;*/
   border:$input-border-width solid $input-border-color;
   > input {
     max-width: 60px;
@@ -295,15 +301,30 @@ display: inline-block;
 }
 
 //prices
-.regular-price{
+.price-box{
+  position: relative;
+}
+.regular-price, .product-regular-price{
   text-decoration: line-through;
   font-size: $regular-price-font-size;
   color: $regular-price-color;
-  font-weight: 700;
+  font-weight: $regular-price-font-weight;
+  &.regular-position-price{
+    position: absolute;
+    top: -11px;
+    left: 1px;
+  }
 }
 .price{
-  font-weight: 700;
-  color:$black;
+  font-weight: $price-font-weight;
+  color: $price-color;
+  font-size: $price-size;
+}
+.product-desconto{
+  color: $green-100;
+  &.juros-price{
+    display: block;
+    }
 }
 //forms
 custom-file-label.selected:after{
@@ -317,7 +338,6 @@ custom-file-label.selected:after{
 .nav-tabs  {
   .nav-link{
   color:$gray-600;
-  font-weight: 700;
   }
   .nav-link.active,
   .nav-item.show .nav-link {
@@ -329,12 +349,11 @@ custom-file-label.selected:after{
 }
 //products-section-title
 .products-section-title{
-  text-transform: uppercase;
   text-align: center;
   display: block;
   margin-bottom: $spacer;
   @extend .h1;
-  font-weight: 700;
+  font-weight: 100;
 }
 
 //home content spacing
