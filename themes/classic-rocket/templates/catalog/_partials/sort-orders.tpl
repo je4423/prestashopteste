@@ -22,13 +22,30 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="form-inline">
+<!--<div class="form-inline">
     <div class="form-group mb-0">
-        <label for="select-sort-order" class="d-none d-sm-inline-block">{l s='Sort by:' d='Shop.Theme.Global'}</label>
+     <label for="select-sort-order" class="d-none d-sm-inline-block">{l s='Sort by:' d='Shop.Theme.Global'}</label>
         <select class="custom-select ml-sm-2" id="select-sort-order">
             {foreach from=$listing.sort_orders item=sort_order}
                 <option value="{$sort_order.url}"{if $sort_order.current} selected="selected"{/if}>{$sort_order.label}</option>
             {/foreach}
         </select>
+    
+        {foreach from=$listing.sort_orders item=sort_order}
+            <a class="js-search-link btn btn-sm btn-outline btn-light mr-1" href="{$sort_order.url}">{$sort_order.label} {if $sort_order.current}<i class="material-icons check_box">&#xE834;</i>{/if}</a>
+        {/foreach}       
     </div>
+</div>-->
+<div class="dropdown">
+ <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-// haspopup="true" aria-expanded="false">   
+		{l s='Sort by:' d='Shop.Theme.Global'}
+		{foreach from=$listing.sort_orders item=sort_order}
+	    	{if $sort_order.current}{$sort_order.label}{/if}     
+	    {/foreach}
+ </button>
+ <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+   {foreach from=$listing.sort_orders item=sort_order}
+   <a class="dropdown-item" href="{$sort_order.url}">{$sort_order.label}</a>
+   {/foreach}
+ </div>
 </div>

@@ -31,11 +31,16 @@
 {block name='header_nav'}
   <nav class="header-nav border-bottom">
     <div class="container header__container">
-      <div class="row d-none d-md-flex align-items-center">
-        <div class="col-md-4">
+      <div class="row align-items-center">
+        <div class="col-md-2 d-none d-md-block" id="_desktop_logo">
+          <a href="{$urls.base_url}">
+            <img class="logo img-fluid" src="{$shop.logo}" alt="{$shop.name}">
+          </a>
+        </div>
+        <div class="col-md-6">
             {hook h='displayNav1'}
         </div>
-        <div class="col-md-8 d-flex align-items-center justify-content-end right-nav">
+        <div class="col-4 d-flex align-items-center justify-content-end right-nav">
             {hook h='displayNav2'}
         </div>
       </div>
@@ -54,7 +59,6 @@
         </div>
 
       </div>
-    </div>
   </nav>
 {/block}
 
@@ -62,10 +66,7 @@
   <div class="header-top border-bottom">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-2 d-none d-md-block" id="_desktop_logo">
-          <a href="{$urls.base_url}">
-            <img class="logo img-fluid" src="{$shop.logo}" alt="{$shop.name}">
-          </a>
+        <div class="col-md-2">
         </div>
         <div class="col-md-10 col-sm-12 d-flex justify-content-between position-static">
             {hook h='displayTop'}

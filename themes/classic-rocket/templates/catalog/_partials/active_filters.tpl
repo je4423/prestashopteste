@@ -23,16 +23,16 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-<div id="js-active-search-filters" class="{if $activeFilters|count}active_filters mb-3 p-3 d-flex align-items-center{else}hide{/if}">
+<div id="js-active-search-filters" class="{if $activeFilters|count}mb-3 align-items-center{else}hide{/if}">
   {block name='active_filters_title'}
-    <span class="h5 m-0 mr-2 {if $activeFilters|count}active-filter-title{else}d-none{/if}">{l s='Active filters' d='Shop.Theme.Global'}</span>
+    
   {/block}
 
   {if $activeFilters|count}
       {foreach from=$activeFilters item="filter"}
         {block name='active_filters_item'}
             <a class="js-search-link btn btn-sm btn-outline btn-light mr-1" href="{$filter.nextEncodedFacetsURL}">{l s='%1$s: ' d='Shop.Theme.Catalog' sprintf=[$filter.facetLabel]}
-                {$filter.label} <i class="material-icons close">&#xE5CD;</i></a>
+                {$filter.label} <i class="material-icons check_box">&#xE834;</i></a>
         {/block}
       {/foreach}
   {/if}

@@ -30,8 +30,11 @@
   </div>
 </div>
 <div class="footer-container">
-  <div class="container">
-    <div class="row">
+  <div class="container small">
+    <div class="text-center mb-3">
+      <a href="#teste" class="nav-footer-access" data-toggle="collapse">Mais informações</a>
+    </div>
+    <div id="teste" class="row collapse">
       {block name='hook_footer'}
         {hook h='displayFooter'}
       {/block}
@@ -41,13 +44,12 @@
         {hook h='displayFooterAfter'}
       {/block}
     </div>
-    <div class="row">
+    
+    <div class="row mt-3">
       <div class="col-md-12">
-        <p class="text-center">
-          {block name='copyright_link'}
-            <a class="_blank" href="http://www.prestashop.com" target="_blank">
+        <p class="text-center xsmall">
+          {block name='copyright_link'}         
               {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-            </a>
           {/block}
         </p>
       </div>

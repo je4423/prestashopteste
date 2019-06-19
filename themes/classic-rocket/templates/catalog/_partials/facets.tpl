@@ -29,12 +29,14 @@
     {/block}
 
     {block name='facets_clearall_button'}
+      {if $activeFilters}
       <div id="_desktop_search_filters_clear_all" class="d-none d-md-block clear-all-wrapper">
-        <button data-search-url="{$clear_all_link}" class="btn btn-secondary btn-block js-search-filters-clear-all mb-3">
+        <button data-search-url="{$clear_all_link}" class="btn btn-light btn-sm js-search-filters-clear-all mb-3">
           <i class="material-icons">&#xE14C;</i>
           {l s='Clear all' d='Shop.Theme.Actions'}
         </button>
       </div>
+      {/if}
     {/block}
     {foreach from=$facets item="facet"}
       {if $facet.displayed}
@@ -58,7 +60,7 @@
           {if $facet.widgetType !== 'dropdown'}
 
             {block name='facet_item_other'}
-              <div id="facet_{$_expand_id}" class="collapse show " data-collapse-hide-mobile>
+              <div id="facet_{$_expand_id}" class="collapse show small" data-collapse-hide-mobile>
                 {foreach from=$facet.filters key=filter_key item="filter"}
                     {if $filter.displayed}
                     <div class="custom-control custom-{if $facet.multipleSelectionAllowed}checkbox{else}radio{/if}{if isset($filter.properties.color) || isset($filter.properties.texture)} custom-color{/if}">
@@ -71,12 +73,15 @@
                         >
                         <label class="custom-control-label" for="facet_input_{$_expand_id}_{$filter_key}">
                             {if isset($filter.properties.color)}
-                                <span class="color" style="background-color:{$filter.properties.color}"></span>
+                                <span class="color" style="background-color:{$filter.properties.color}" title="{$filter.label} - ({$filter.magnitude})"></span>
                             {elseif isset($filter.properties.texture)}
-                                <span class="color texture" style="background-image:url({$filter.properties.texture})"></span>
+                                <span class="color texture" style="background-image:url({$filter.properties.texture})" title="{$filter.label} - ({$filter.magnitude})"></span>
                             {/if}
-                            {$filter.label}
-                            {if $filter.magnitude}
+                            {if isset($filter.properties.color)}
+                            {else}
+                              {$filter.label}
+                            {/if}                            
+                            {if $filter.magnitude && !isset($filter.properties.color)}
                                 <span class="magnitude">({$filter.magnitude})</span>
                             {/if}
                         </label>
