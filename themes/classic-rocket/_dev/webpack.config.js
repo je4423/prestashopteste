@@ -30,6 +30,7 @@ let config = {
   entry: {
     main: [
       './js/theme.js',
+      './css/custom.scss',
       './css/theme.scss'
     ]
   },

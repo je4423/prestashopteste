@@ -1,0 +1,11 @@
+.breadcrumb-item+.breadcrumb-item:before {
+	content: ">";
+}
+.breadcrumb {
+	background-color: #e8e8e8;
+}
+/*Alterar tamanho do icone, seguraça para o cliente*/
+.list-group-item img{
+	width: 16px;
+	height: 16px;
+}
