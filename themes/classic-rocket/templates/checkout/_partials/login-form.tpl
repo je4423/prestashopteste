@@ -26,12 +26,12 @@
 
 {block name='form_buttons'}
   <button
-    class="continue btn btn-primary btn-lg"
+    class="continue btn btn-primary btn-sm"
     name="continue"
     data-link-action="sign-in"
     type="submit"
     value="1"
   >
-    {l s='Continue' d='Shop.Theme.Actions'}
+    Fazer login
   </button>
 {/block}

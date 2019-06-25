@@ -342,10 +342,14 @@ custom-file-label.selected:after{
   .nav-link.active,
   .nav-item.show .nav-link {
     border-bottom-width: 3px;
+    display: none;
   }
 }
 .tab-content{
   padding-top: $spacer;
+}
+.login-account{
+    margin: 0 auto;
 }
 //products-section-title
 .products-section-title{
@@ -377,6 +381,7 @@ custom-file-label.selected:after{
 }
 
 .nav-tabs {
+  border-top: 2px solid #f1f1f1;
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;

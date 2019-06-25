@@ -9,3 +9,10 @@
 	width: 16px;
 	height: 16px;
 }
+/*Alterar .input-group>.form-control bootstrap*/
+.input-group>.form-control {
+	width: auto !important;
+}
+.form-control{
+	height: 1.8rem!important;
+}

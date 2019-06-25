@@ -168,7 +168,7 @@
                         >
                         <span class="input-group-btn">
               <button
-                      class="btn btn-light"
+                      class="btn btn-light btn-sm"
                       type="button"
                       data-action="show-password"
                       data-text-show="{l s='Show' d='Shop.Theme.Actions'}"
@@ -177,11 +177,9 @@
                 {l s='Show' d='Shop.Theme.Actions'}
               </button>
             </span>
-                        <small class="form-text text-muted">{l s='Your password must be at least %min% characters long.' d='Shop.Forms.Help' sprintf=['%min%' => 5]}</small>
-
+                        <small class="text-muted xsmall"><i class="material-icons priority_high">priority_high</i>{l s='Your password must be at least %min% characters long.' d='Shop.Forms.Help' sprintf=['%min%' => 5]}</small>
 
                         {include file='_partials/form-errors.tpl' errors=$field.errors required=$field.required label=$field.label}
-
                     </div>
                 {/block}
 
