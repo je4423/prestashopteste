@@ -2,5 +2,12 @@
  * Custom code goes here.
  * A template should always ship with an empty custom.css
  */
+ /* Alterado breadcrumb */
+.breadcrumb-item+.breadcrumb-item:before {
+	content: ">";
+}
+.breadcrumb {
+	background-color: #e8e8e8;
+}
  /*Retirado margin-bottom da tag "label"*/
  label{margin-bottom:0;}
