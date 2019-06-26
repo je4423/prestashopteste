@@ -24,6 +24,7 @@
  * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  */
+
 namespace PrestaShop\Module\AutoUpgrade\Twig\Block;
 
 use PrestaShop\Module\AutoUpgrade\UpgradeSelfCheck;
@@ -120,6 +121,7 @@ class UpgradeChecklist
             'adminDirectoryWritableReport' => $this->selfCheck->getAdminAutoUpgradeDirectoryWritableReport(),
             'safeModeIsDisabled' => $this->selfCheck->isSafeModeDisabled(),
             'allowUrlFopenOrCurlIsEnabled' => $this->selfCheck->isFOpenOrCurlEnabled(),
+            'zipIsEnabled' => $this->selfCheck->isZipEnabled(),
             'storeIsInMaintenance' => $this->selfCheck->isShopDeactivated(),
             'currentIndex' => $this->currentIndex,
             'token' => $this->token,

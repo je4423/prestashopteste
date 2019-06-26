@@ -24,6 +24,7 @@
  * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  */
+
 namespace PrestaShop\Module\AutoUpgrade;
 
 use Configuration;
@@ -35,6 +36,11 @@ class UpgradeSelfCheck
      * @var bool
      */
     private $fOpenOrCurlEnabled;
+
+    /**
+     * @var bool
+     */
+    private $zipEnabled;
 
     /**
      * @var bool
@@ -108,10 +114,11 @@ class UpgradeSelfCheck
     {
         $this->moduleVersion = $this->checkModuleVersion();
         $this->fOpenOrCurlEnabled = ConfigurationTest::test_fopen() || extension_loaded('curl');
+        $this->zipEnabled = extension_loaded('zip');
         $this->rootDirectoryWritable = $this->checkRootWritable();
         $this->adminAutoUpgradeDirectoryWritable = $this->checkAdminDirectoryWritable($prodRootPath, $adminPath, $autoUpgradePath);
         $this->shopDeactivated = $this->checkShopIsDeactivated();
-        $this->cacheDisabled = !(defined('_PS_CACHE_ENABLED_') && _PS_CACHE_ENABLED_);
+        $this->cacheDisabled = !(defined('_PS_CACHE_ENABLED_') && false != _PS_CACHE_ENABLED_);
         $this->safeModeDisabled = $this->checkSafeModeIsDisabled();
         $this->moduleVersionIsLatest = $this->checkModuleVersionIsLastest($upgrader);
         $this->maxExecutionTime = $this->checkMaxExecutionTime();
@@ -124,6 +131,14 @@ class UpgradeSelfCheck
     public function isFOpenOrCurlEnabled()
     {
         return $this->fOpenOrCurlEnabled;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isZipEnabled()
+    {
+        return $this->zipEnabled;
     }
 
     /**
@@ -216,7 +231,7 @@ class UpgradeSelfCheck
 
     public function isPrestaShopReady()
     {
-        return $this->prestashopReady || 1 === Configuration::get('PS_AUTOUP_IGNORE_REQS');
+        return $this->prestashopReady || 1 === (int) Configuration::get('PS_AUTOUP_IGNORE_REQS');
     }
 
     /**
@@ -228,6 +243,7 @@ class UpgradeSelfCheck
     {
         return
             $this->isFOpenOrCurlEnabled()
+            && $this->isZipEnabled()
             && $this->isRootDirectoryWritable()
             && $this->isAdminAutoUpgradeDirectoryWritable()
             && $this->isShopDeactivated()
@@ -276,7 +292,7 @@ class UpgradeSelfCheck
     {
         return
             !Configuration::get('PS_SHOP_ENABLE')
-            || (isset($_SERVER['HTTP_HOST']) && in_array($_SERVER['HTTP_HOST'], array('127.0.0.1', 'localhost')));
+            || (isset($_SERVER['HTTP_HOST']) && in_array($_SERVER['HTTP_HOST'], array('127.0.0.1', 'localhost', '[::1]')));
     }
 
     /**
